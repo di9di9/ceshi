@@ -3,10 +3,10 @@
 # configs
 AUUID=b7c97845-a86d-44ae-8c62-2c52fc567eab
 CADDYIndexPage=https://github.com/Externalizable/bongo.cat/archive/master.zip
-CONFIGCADDY=https://raw.githubusercontent.com/kelejise/ao/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/kelejise/ao/master/etc/xray.json
+CONFIGCADDY=https://raw.githubusercontent.com/di9di9/ceshimaster/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/di9di9/ceshi/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/kelejise/ao/master/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/di9di9/ceshi/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
